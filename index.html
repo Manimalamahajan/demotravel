@@ -1,0 +1,847 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/animate.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<style>
+	.pack_bx:hover img {
+  transform: scale(1.05);
+}
+.pack_bx img {
+  transition: 0.5s;
+}
+.bg-img-6 {
+ transition: 0.5s;
+}
+.bg-img-6:hover {
+  transform: scale(1.05);
+}
+.theme-parks {
+ transition: 0.5s;
+}
+.theme-parks:hover {
+  transform: scale(1.05);
+}
+.shopping-1 {
+ transition: 0.5s;
+}
+.shopping-1:hover {
+  transform: scale(1.05);
+}
+.zoomIn {
+  -webkit-animation: zoomIn 1s;
+  animation: zoomIn 1s;
+}
+	</style>
+</head>
+<body class="front-page">
+	<!-- <div id="under-construction" class="under-construction">
+		<div class="under-construction-content position-relative">
+			<button id="btn-close" class="btn btn-close">
+				<img src="/public/assets/images/error.svg"/>
+			</button>
+			<h3>
+				<img class="logo" src="public/templates/assets/logo.png" />
+				Two Continents is under construction.</h3>
+			<img src="/public/templates/assets/undraw_under_construction_46pa@2x.png"/>
+		</div>
+	</div> -->
+	<div id="social_header" class="social_header container" >
+		<ul class="social_header_list justify-content-end row zoomIn" >
+			<li><a href="#">Trip Adviser</a></li>
+			<li><a href="#">Youtube</a></li>
+			<li><a href="#"><i class="fab fa-instagram" style="font-size: 20px;"></i></a></li>
+			<li><a href="#"><i class="fab fa-facebook-f" style="font-size: 20px;"></i></a></li>
+			<li><a href="#"><i class="fas fa-flag-usa" style="font-size: 20px;"></i></a></li>
+		</ul>
+	</div>
+	<div id="site_header" class="site_header bg-grey container-fluid p-0" >
+		<div class="container">
+			<ul class="nav row justify-content-end position-relative hide-768  zoomIn" >
+				<li class="nav-item nav-item-logo" >
+					<a class="nav-link" href="#">
+						<img class="logo" style="width: 200px;" src="images/your_logo.png" />
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Holiday Apartaments</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Tours & Adventure</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">City Guide</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Trip Planner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item nav-item-search active-search">
+					<button class="btn btn-link">
+						<i class="fas fa-search" style="font-size: 30px;"></i>
+					</button>
+				</li>
+			</ul>
+			<div class="nav row justify-content-end position-relative show-768 d-none  zoomIn" >
+				<li class="nav-item nav-item-logo">
+					<a class="nav-link" href="#">
+						<img class="logo" src="images/your_logo.png" style="width: 180px;" />
+					</a>
+				</li>
+				<li class="nav-item nav-hamburger">
+					<a class="nav-link" href="#"><i class="fas fa-bars" style="font-size: 30px;"></i></a>
+				</li>
+			</div>
+			<div class="mobile-menu d-none d-none animation-element" >
+				<li id="mobile-menu" class="nav-item nav-item-logo">
+					<a class="nav-link" href="#">
+						<img class="logo" src="images/your_logo.png" />
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Holiday Apartaments</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Tours & Adventure</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">City Guide</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Trip Planner</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+				</li>
+				<li class="nav-item nav-item-search active-search">
+					<button class="btn btn-link">
+						<img src="public/templates/assets/search.svg" />
+					</button>
+				</li>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="search-container" class="search-container container p-0">
+		<img class="w-100  zoomIn" src="images/img-1.jpeg" />
+		<div class="search-wrapper container hide-991  zoomIn" >
+			<div class="tab-list">
+				<div class="tab-item active">
+					Apartaments
+				</div>
+				<div class="tab-item">
+					Tours&Attractions
+				</div>
+				<div class="tab-item">
+					Experiences
+				</div>
+			</div>
+			<div class="search-elements">
+				<div class="input-wrapper">
+					<label>Check in</label>
+					<input type="text" class="input-date" id="checkin" name="checkin" placeholder="Check in" />
+				</div>
+				<div class="input-wrapper">
+					<label>Check out</label>
+					<input type="text" class="input-date" id="checkout" name="checkout" placeholder="Check out" />
+				</div>
+				<div class="input-wrapper">
+					<label>Kids</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="kids" name="kids" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="images/kids_icon.png" />
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<label>Guests</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="guests" name="guests" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="images/guests_icon.png" />
+					</div>
+					
+				</div>
+				<div class="input-wrapper">
+					<label style="color: #fff;">Request</label>
+					<button class="btn btn-green">Request</button>
+				</div>
+			</div>
+
+
+<!-- 
+			<div class="search-elements-1">
+				<div class="input-wrapper">
+					<label>Check in</label>
+					<input type="text" class="input-date" id="checkin" name="checkin" placeholder="Check in" />
+				</div>
+				<div class="input-wrapper">
+					<label>Check out</label>
+					<input type="text" class="input-date" id="checkout" name="checkout" placeholder="Check out" />
+				</div>
+				<div class="input-wrapper">
+					<label>Kids</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="kids" name="kids" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="public/templates/assets/kids_icon.svg" />
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<label>Guests</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="guests" name="guests" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="public/templates/assets/guests_icon.svg" />
+					</div>
+					
+				</div>
+				<div class="input-wrapper">
+					<label style="color: #fff;">Request</label>
+					<button class="btn btn-green">Request</button>
+				</div>
+			</div>
+ -->
+
+<!-- 
+			<div class="search-elements-2">
+				<div class="input-wrapper">
+					<label>Check in</label>
+					<input type="text" class="input-date" id="checkin" name="checkin" placeholder="Check in" />
+				</div>
+				<div class="input-wrapper">
+					<label>Check out</label>
+					<input type="text" class="input-date" id="checkout" name="checkout" placeholder="Check out" />
+				</div>
+				<div class="input-wrapper">
+					<label>Kids</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="kids" name="kids" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="public/templates/assets/kids_icon.svg" />
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<label>Guests</label>
+					<div class="input-number-wrapper">
+						<input type="text" class="input-number" id="guests" name="guests" value="0" />
+						<button class="btn btn-plus">+</button>
+						<img src="public/templates/assets/guests_icon.svg" />
+					</div>
+					
+				</div>
+				<div class="input-wrapper">
+					<label style="color: #fff;">Request</label>
+					<button class="btn btn-green">Request</button>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="banner-container" class="banner-container container p-0 wow zoomIn"  >
+		<div class="banner-inner-layer text-center">
+			<h3>Holiday apartaments</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</div>
+	</div>
+	<div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-3.jpg" />
+			<div class="floating-text see-991 wow zoomIn" >
+				<h5 class="title">
+					DUBAI MARINA
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn" >
+				<p class="pre-title">
+					One of the most popular location
+				</p>
+				<h5 class="title">
+					DUBAI MARINA
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 wow zoomIn pack_bx" >
+				<img class="w-100" src="images/img-4.jpg"/>
+				<p class="headline headline-right">JUMEIRAH BEACH RESIDENCE</p>
+				<button class="btn btn-orange btn-left">
+					See more...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="container p-0 presentation-container presentation-3grid-container attraction-container">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-5.jpg"/>
+			<div class="floating-text left-floating-text see-1200 wow zoomIn">
+				<h5 class="title">
+					BUSINESS BAY
+				</h5>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right mr-20">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative btn-down p-active hide-1200 wow zoomIn">
+			<p class="pre-title">
+				A must for everyone who is visiting UAE
+			</p>
+			<h5 class="title">
+				BUSINESS BAY
+			</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+			<button class="btn btn-white btn-left mr-20">
+				See more...
+			</button>
+		</div>
+		<div class="position-relative hide-991 bg-img-6 wow zoomIn">
+			<p class="headline headline-right">COMMING SOON</p>
+			<p class="headline headline-left headline-bottom">PALM JUMEIRAH DUBAI</p>
+		</div>
+	</div>
+	<div class="container p-0 presentation-container presentation-3grid-container presentation-3grid-container-reverse attraction-container">
+		<div class="position-relative btn-down p-active hide-991 wow zoomIn">
+			<h5 class="title">
+				CITY WALK
+			</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur 
+			</p>
+			<button class="btn btn-white btn-right mr-20">
+				See more...
+			</button>
+		</div>
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/city.jpg"/>
+			<div class="floating-text see-1200 wow zoomIn">
+				<h5 class="title">
+					CITY WALK
+				</h5>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right mr-20">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative hide-1200 wow zoomIn" style="padding: 30px;">
+			<h5 class="title">
+					CITY WALK
+				</h5>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right mr-20">
+					See more...
+				</button>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container container p-0 wow zoomIn">
+		<div class="banner-inner-layer text-center">
+			<h3>Tours & Adventure</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+		</div>
+	</div>
+	<div id="safari-container" class="presentation-container safari-container d-grid container p-0">
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn">
+				<p class="pre-title">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<h5 class="title">
+					DESERT SAFARI
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod !
+				</p>
+				<button class="btn btn-white btn-right mr-20">
+					Discover adventure...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 pack_bx wow zoomIn">
+				<img class="w-100" src="images/img-8.jpg" style="height: 200px;" />
+				<p class="headline headline-left">QUAD BIKE</p>
+				<button class="btn btn-orange btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-7.jpg"/>
+			<div class="floating-text left-floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					DESERT SAFARI
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="container p-0 presentation-container presentation-3grid-container attraction-container">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-10.jpg"/>
+			<div class="floating-text see-1200 wow zoomIn">
+				<h5 class="title">
+					ABU DHABI CITY TOUR
+				</h5>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right mr-20">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative btn-down p-active hide-1200 wow zoomIn">
+			<p class="pre-title">
+				A must for everyone who is visiting UAE
+			</p>
+			<h5 class="title">
+				ABU DHABI CITY TOUR
+			</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod!
+			</p>
+			<button class="btn btn-white btn-right mr-20">
+				See more...
+			</button>
+		</div>
+		<div class="position-relative hide-991 theme-parks wow zoomIn">
+			<p class="headline headline-right">THEME PARKS</p>
+			<p class="headline headline-right headline-under">WATER PARK</p>
+			<button class="btn btn-orange btn-right">
+				See more...
+			</button>
+		</div>
+	</div>
+	<div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="position-relative  pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-12.jpg"/>
+			<div class="floating-text left-floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					SKYDIVE DUBAI
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn">
+				<p class="pre-title">
+					Absolutely the most thrilling adventure in Dubai.
+				</p>
+				<h5 class="title">
+					SKYDIVE DUBAI
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-left">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 wow zoomIn pack_bx">
+				<img class="w-100" src="images/img-13.jpg" />
+				<p class="headline headline-right">FISHING</p>
+			</div>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container presentation-container position-relative container p-0 wow zoomIn">
+		<div class="banner-inner-layer text-center">
+			<h3>Airport transfer</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+		</div>
+	</div>
+	<div id="transfer-container" class="presentation-container safari-container d-grid container p-0">
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn">
+				<h5 class="title">
+					SAFE AIRPORT TRANSFER
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet.
+				<button class="btn btn-white btn-right mr-20">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 wow zoomIn pack_bx">
+				<img class="w-100" src="images/img-15.png"/>
+				<p class="headline headline-left">RENT SCANIA LUXURY BUS</p>
+				<button class="btn btn-orange btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-14.jpg"/>
+			<div class="floating-text left-floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					SAFE AIRPORT TRANSFER
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit,  adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container presentation-container position-relative container p-0">
+		<div class="banner-inner-layer text-center wow zoomIn">
+			<h3>Rent a Car</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+			</p>
+		</div>
+	</div>
+	<div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-16.jpg"/>
+			<div class="floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					Rent a car in Dubai
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet,  adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn">
+				<h5 class="title">
+					Rent a car in Dubai
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 pack_bx wow zoomIn">
+				<img class="w-100" src="images/img-17.png" />
+				<p class="headline headline-right">RENT FERRARI 458 SPIDER</p>
+				<button class="btn btn-orange btn-left">
+					See details...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container presentation-container position-relative container p-0">
+		<div class="banner-inner-layer text-center wow zoomIn">
+			<h3>Yacht Rental</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+		</div>
+	</div>
+	<div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-18.jpg"/>	
+			<div class="floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					Luxury Yacht
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet,adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991 wow zoomIn">
+				<h5 class="title">
+					Luxury Yacht
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200 pack_bx wow zoomIn">
+				<img class="w-100" src="images/img-19.png" />
+				<p class="headline headline-right">CREATE AN UNFORGETABLE EXPERIENCE</p>
+				<button class="btn btn-orange btn-right">
+					Book a Yacht...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container container p-0">
+		<div class="banner-inner-layer text-center wow zoomIn">
+			<h3>CITY GUIDE</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+		</div>
+	</div>
+	<!-- <div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="position-relative">
+			<img class="w-100" src="public/templates/assets/header-apartaments.png"/>
+			<div class="floating-text see-991">
+				<h5 class="title">
+					DUBAI MARINA
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active hide-991">
+				<h5 class="title">
+					ICONIC ATTRACTIONS
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					Discover attractions...
+				</button>
+			</div>
+			<div class="w-100 position-down hide-1200">
+				<img class="w-100" src="public/templates/assets/food_culture.png" />
+				<p class="headline headline-right">FOOD AND CULTURE</p>
+				<button class="btn btn-orange btn-left">
+					See more...
+				</button>
+			</div>
+		</div>
+	</div> -->
+	<div class="container p-0 presentation-container presentation-3grid-container attraction-container">
+		<div class="position-relative pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-20.jpg"/>
+			<div class="floating-text see-991 wow zoomIn">
+				<h5 class="title">
+					OLD TOWN
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+		</div>
+		<div class="position-relative btn-down p-active hide-1200 wow zoomIn">
+			<h5 class="title">
+				OLD TOWN
+			</h5>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+			</p>
+			<button class="btn btn-white btn-left">
+				See more...
+			</button>
+		</div>
+		<div class=" position-relative hide-991 shopping-1 wow zoomIn">
+			<p class="headline headline-right">SHOPPING DESTIONATION</p>
+			<button class="btn btn-orange btn-font-small">
+				Check out Dubai best shopping destinations
+			</button>
+		</div>
+	</div>
+	<div id="presentation-container" class="presentation-container d-grid container p-0">
+		<div class="pack_bx">
+			<img class="w-100 wow zoomIn" src="images/img-22.jpg"/>
+		</div>
+		<div class="item-text position-relative">
+			<div class="position-relative p-active wow zoomIn">
+				<h5 class="title">
+					DUBAI BEACHES
+				</h5>
+				<p class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				</p>
+				<button class="btn btn-white btn-right">
+					See more...
+				</button>
+			</div>
+			<div class="w-100 position-down pack_bx wow zoomIn">
+				<img class="w-100" src="images/img-23.png" />
+				<p class="headline headline-right">NIGHTLIFE</p>
+				<button class="btn btn-orange btn-left">
+					See more...
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="banner-container" class="banner-container presentation-container position-relative container p-0">
+		<div class="banner-inner-layer text-center wow zoomIn">
+			<h3>Holiday Planner</h3>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+			</p>
+			<div class="btn btn-orange float-right">Create itinerary</div>
+		</div>
+	</div>
+	<div id="map-container pack_bx" class="container p-0">
+		<img class="w-100 wow zoomIn" src="images/map.png" />
+	</div>
+	<div id="contact-container" class="container presentation-container contact-container">
+		<div class="contact-form text-center wow zoomIn">
+			<label>Get in touch with us</label>
+			<div class="input-wrapper">
+				<input type="text" class="input-user" name="Name" placeholder="Name">
+			</div>
+			<div class="input-wrapper">
+				<input type="text" class="input-email" name="Name" placeholder="Name">
+			</div>
+			<div class="input-wrapper">
+				<textarea placeholder="Your message goes here..."></textarea>
+			</div>
+			<button class="btn btn-send">Send</button>
+		</div>
+		<div  class="contact-form text-left wow zoomIn">
+			<label>Contact details</label>
+			<!--<div class="contact-details pin-icon clearfix">
+				Five tower, 6th floor <br> Media City, Dubai, UAE
+			</div>-->
+			<div class="contact-details phone-icon clearfix">
+				Apartments inquiries: +123 10 020 0300<br>Tours and activities inquiries: +123 55 666 0000<br>Office: +123 00 111 1234
+			</div>
+			<div class="contact-details email-icon clearfix">
+				<!-- <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6afa8a0a986a7a5b6a3a7b4aaaea9aaafa2a7bfe8a5a9ab">[email&#160;protected]</a> -->
+			</div>
+		</div>
+	</div>
+	<div class="footer container wow zoomIn" style="color:#fff;text-align:center;">
+		<!--<a class="">About us</a>
+		<a class="">Blog and Gallery</a>
+		<a class="">Local laws</a>
+		<a class="">Privacy policy</a>
+		<a class="">Terms and Conditions</a>-->
+		COPYRIGHT TKIES.COM
+	</div>
+	<script data-cfasync="false" src="http://twocontinents.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+	<script src="http://twocontinents.com/public/assets/js/home.js"></script>
+	<script src='js/jquery.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/wow.min.js'></script>
+	<!--<script>
+	$( document ).ready(function() {
+	var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+  
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('zoomIn');
+    } else {
+      $element.removeClass('zoomIn');
+    }
+  });
+}
+
+$window.on('scroll resize', check_if_in_view);
+$window.trigger('scroll');
+   
+  });
+
+
+
+	</script>-->
+	
+	<script>
+	
+	new WOW().init();
+	
+	</script>
+</body>
+</html>
